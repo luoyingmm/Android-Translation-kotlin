@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@mipmap/change_language"/>
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+
+        android:background="@drawable/enter_radius">
+        <EditText
+            android:id="@+id/et_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/translation_tip"
+            android:layout_gravity="center|left"
+            android:textSize="@dimen/dp_15"
+            android:maxLength="60"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/black"
+            />
+    </FrameLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:src="@mipmap/change_language_2"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/enter_radius">
+        <FrameLayout
+            android:id="@+id/fragment_result"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginRight="@dimen/dp_40"
+            >
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/translation_tip_2"
+                android:layout_gravity="center|left"
+                android:textSize="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/black"
+                />
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_copy"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/copy_effect"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|center"
+            />
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/btn_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_effect"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="收藏单词"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        />
+
+
+
+</LinearLayout>
