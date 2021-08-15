@@ -1,15 +1,11 @@
 package com.luoyingmm.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
-import android.graphics.Typeface;
-import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.widget.TextView;
 
-import com.jaredrummler.materialspinner.MaterialSpinner;
+import android.os.Handler;
+import android.util.Log
+
 import com.luoyingmm.R;
 import com.luoyingmm.util.StringUtils;
 
@@ -24,14 +20,17 @@ public class WelcomeActivity : BaseActivity() {
     }
 
     override fun initData() {
-        val loginFlag:SharedPreferences = getSharedPreferences("LoginFlag", MODE_PRIVATE)
+        val loginFlag = getSharedPreferences("LoginFlag", MODE_PRIVATE)
          StringUtils.username = loginFlag.getString("loginKey","")
         if (!StringUtils.username.equals("")){
+            Log.e("logwe", "12344", )
             navigateTo(MainActivity::class.java)
+
             finish()
         }else{
             Handler().postDelayed(Runnable {
               navigateTo(LoginActivity::class.java)
+
                 finish()
             },1000);
         }
