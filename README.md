@@ -1,6 +1,6 @@
 ## 项目介绍
 
-* **注意这里是https://github.com/luoyingmm/Android-Translation 的kotlin重置版，用于学习kotlin因此极不稳定，请勿使用**
+* **注意这里是[快捷翻译](https://github.com/luoyingmm/Android-Translation)的kotlin重置版，用于学习kotlin因此极不稳定，请勿使用**
 * 开发环境：```Android SdkVersion 30```，```SpringBoot2.5.3```
 * 这是一款```翻译APP```，可以快捷的进行文本翻译，做到打开即用的效果。
 * 使用``Spring Boot``进行前后端分离，利用```OkHttp```接入，集成了登录系统。
