@@ -17,7 +17,7 @@ import com.luoyingmm.util.DialogUtil.AlertDialogBtnClickListener
 import com.luoyingmm.util.StringUtils
 import java.util.*
 
-//登录界面
+//登录界面设置
 class LoginActivity : BaseActivity() {
     private var etUsername: EditText? = null
     private var etPassword: EditText? = null
